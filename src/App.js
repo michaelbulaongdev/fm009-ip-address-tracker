@@ -1,17 +1,18 @@
 import './App.css';
 import {useState} from 'react';
 import axios from 'axios';
+import {Container} from '@mui/material';
 import InputPanel from './components/InputPanel';
 import InfoPanel from './components/InfoPanel';
 
 function App() {
-	const [data, setData] = useState([]);
+	const [data, setData] = useState({});
 	const [input, setInput] = useState('');
 
-	const fetchData = (ipAddress) => {
+	const fetchData = (ip) => {
 		axios
 			.get(
-				`https://geo.ipify.org/api/v2/country?apiKey=at_He23AoOSzVfPBtwXdzJRxJUtkZjBo&ipAddress=${ipAddress}`,
+				`https://geo.ipify.org/api/v2/country?apiKey=at_He23AoOSzVfPBtwXdzJRxJUtkZjBo&ipAddress=${ip}`,
 			)
 			.then((response) => {
 				console.log(response.data);
@@ -19,6 +20,7 @@ function App() {
 			})
 			.catch((error) => {
 				console.log(error);
+				setData({});
 			});
 	};
 
@@ -33,14 +35,11 @@ function App() {
 	};
 
 	return (
-		<div className='App'>
-			<div className='blue-area'>
-				<h1>IP Address Tracker</h1>
-				<InputPanel handleChange={handleChange} handleSubmit={handleSubmit} />
-				<InfoPanel data={data} />
-			</div>
-			<div className='map'></div>
-		</div>
+		<Container className='App'>
+			<h1>IP Address Tracker</h1>
+			<InputPanel handleChange={handleChange} handleSubmit={handleSubmit} />
+			<InfoPanel data={data} />
+		</Container>
 	);
 }
 

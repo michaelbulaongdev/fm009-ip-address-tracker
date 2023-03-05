@@ -12,11 +12,11 @@ h1 {
 .App {
   text-align: center;
   color: var(--veryDarkGray);
+  display: flex;
 }
 
 .input-container {
   display: flex;
-  flex-direction: row;
   margin: 0 auto;
 }
 
