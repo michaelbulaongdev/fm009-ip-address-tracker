@@ -39,7 +39,7 @@ function App() {
 				<InputPanel handleChange={handleChange} handleSubmit={handleSubmit} />
 				<InfoPanel data={data} />
 			</div>
-			<div className='map-area'></div>
+			<div className='map'></div>
 		</div>
 	);
 }
