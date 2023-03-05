@@ -34,9 +34,12 @@ function App() {
 
 	return (
 		<div className='App'>
-			<h1>IP Address Tracker</h1>
-			<InputPanel handleChange={handleChange} handleSubmit={handleSubmit} />
-			<InfoPanel data={data} />
+			<div className='blue-area'>
+				<h1>IP Address Tracker</h1>
+				<InputPanel handleChange={handleChange} handleSubmit={handleSubmit} />
+				<InfoPanel data={data} />
+			</div>
+			<div className='map-area'></div>
 		</div>
 	);
 }

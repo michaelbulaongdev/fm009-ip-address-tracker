@@ -5,10 +5,13 @@
   --darkGray: hsl(0, 0%, 59%);
 }
 
+h1 {
+  font-weight: 700;
+}
+
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  color: var(--veryDarkGray);
 }
 
 .input-container {
@@ -24,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: none;
 }
 
 .icon-arrow:hover {
@@ -33,5 +37,10 @@
 .info-label {
   color: var(--darkGray);
   font-size: small;
+  font-weight: 500;
+}
+
+.info-data {
+  font-size: larger;
   font-weight: 500;
 }
