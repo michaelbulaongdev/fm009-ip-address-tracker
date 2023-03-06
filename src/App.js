@@ -3,6 +3,7 @@ import {useState} from 'react';
 import axios from 'axios';
 import InputPanel from './components/InputPanel';
 import InfoPanel from './components/InfoPanel';
+import MapArea from './components/MapArea';
 
 function App() {
 	const [data, setData] = useState({});
@@ -43,6 +44,7 @@ function App() {
 			<h1>IP Address Tracker</h1>
 			<InputPanel handleChange={handleChange} handleSubmit={handleSubmit} />
 			<InfoPanel data={data} loading={loading} error={error} />
+			<MapArea data={data} loading={loading} />
 		</div>
 	);
 }

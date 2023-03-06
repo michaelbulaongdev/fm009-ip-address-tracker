@@ -45,3 +45,7 @@ h1 {
   font-size: larger;
   font-weight: 500;
 }
+
+#map {
+  height: 300px;
+}
