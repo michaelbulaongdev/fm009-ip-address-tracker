@@ -1,13 +1,14 @@
 import './App.css';
 import {useState} from 'react';
 import axios from 'axios';
-import {Container} from '@mui/material';
 import InputPanel from './components/InputPanel';
 import InfoPanel from './components/InfoPanel';
 
 function App() {
 	const [data, setData] = useState({});
 	const [input, setInput] = useState('');
+	const [error, setError] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	const fetchData = (ip) => {
 		axios
@@ -17,9 +18,12 @@ function App() {
 			.then((response) => {
 				console.log(response.data);
 				setData(response.data);
+				setLoading(false);
+				setError(null);
 			})
-			.catch((error) => {
-				console.log(error);
+			.catch((err) => {
+				console.log(err.message);
+				setError(err.message);
 				setData({});
 			});
 	};
@@ -35,11 +39,11 @@ function App() {
 	};
 
 	return (
-		<Container className='App'>
+		<div className='App'>
 			<h1>IP Address Tracker</h1>
 			<InputPanel handleChange={handleChange} handleSubmit={handleSubmit} />
-			<InfoPanel data={data} />
-		</Container>
+			<InfoPanel data={data} loading={loading} error={error} />
+		</div>
 	);
 }
 
