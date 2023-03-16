@@ -1,8 +1,13 @@
+import {Toolbar} from '@mui/material';
+
 export default function InfoPanel(props) {
 	return (
 		<div>
+			<Toolbar />
 			{props.loading ? (
-				<p className='info-data'>Awaiting data...</p>
+				<p className='info-data'>Awaiting input...</p>
+			) : props.error ? (
+				<p className='info-data'>Error! {props.error}</p>
 			) : (
 				<div>
 					<div>

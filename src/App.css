@@ -1,51 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
 :root {
-  --veryDarkGray: hsl(0, 0%, 17%);
-  --darkGray: hsl(0, 0%, 59%);
+	--veryDarkGray: hsl(0, 0%, 17%);
+	--darkGray: hsl(0, 0%, 59%);
 }
 
 h1 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .App {
-  text-align: center;
-  color: var(--veryDarkGray);
-  display: flex;
-  flex-direction: column;
+	text-align: center;
+	color: var(--veryDarkGray);
+	display: flex;
+	flex-direction: column;
 }
 
 .input-container {
-  display: flex;
-  margin: 0 auto;
+	display: flex;
+	margin: 0 auto;
 }
 
 .icon-arrow {
-  background-color: var(--veryDarkGray);
-  width: 40px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-style: none;
+	background-color: var(--veryDarkGray);
+	width: 40px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-style: none;
 }
 
 .icon-arrow:hover {
-  background-color: var(--darkGray);
+	background-color: var(--darkGray);
 }
 
 .info-label {
-  color: var(--darkGray);
-  font-size: small;
-  font-weight: 500;
+	color: var(--darkGray);
+	font-size: small;
+	font-weight: 500;
 }
 
 .info-data {
-  font-size: larger;
-  font-weight: 500;
-}
-
-#map {
-  height: 300px;
+	font-size: larger;
+	font-weight: 500;
 }
