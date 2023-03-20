@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fm009-ip-address-tracker/static/css/main.cff375bf.css",
+    "main.css": "/fm009-ip-address-tracker/static/css/main.380e81a3.css",
     "main.js": "/fm009-ip-address-tracker/static/js/main.56742c85.js",
     "static/js/787.a7bdcdfd.chunk.js": "/fm009-ip-address-tracker/static/js/787.a7bdcdfd.chunk.js",
     "index.html": "/fm009-ip-address-tracker/index.html",
     "static/media/icon-arrow.svg": "/fm009-ip-address-tracker/static/media/icon-arrow.2eaaa5ee3602d5aa14a2dba69e9fb7a0.svg",
-    "main.cff375bf.css.map": "/fm009-ip-address-tracker/static/css/main.cff375bf.css.map",
+    "main.380e81a3.css.map": "/fm009-ip-address-tracker/static/css/main.380e81a3.css.map",
     "main.56742c85.js.map": "/fm009-ip-address-tracker/static/js/main.56742c85.js.map",
     "787.a7bdcdfd.chunk.js.map": "/fm009-ip-address-tracker/static/js/787.a7bdcdfd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cff375bf.css",
+    "static/css/main.380e81a3.css",
     "static/js/main.56742c85.js"
   ]
 }
